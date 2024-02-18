@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+export const AppStyled = createGlobalStyle`
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -40,3 +43,5 @@
 .read-the-docs {
   color: #888;
 }
+
+`;
