@@ -1,12 +1,10 @@
 import { ListContact, RemoveButton } from './contacts-styled';
 import { useDispatch, useSelector } from 'react-redux';
+import { deleteContact } from '../../redux/contactsSlice';
 
-export const ContactList = ({ removeContact }) => {
+export const ContactList = () => {
     const dispatch = useDispatch();
-    // .filter(({ name }) => name.toLowerCase() === state.filters.name.toLowerCase())
     const list = useSelector(state => state.contacts.items)
-
-    console.log(list);
 
     return (
         <ul>
@@ -15,7 +13,7 @@ export const ContactList = ({ removeContact }) => {
           return (
           <div key={id}>
           <ListContact>{name}: {number}</ListContact>
-          <RemoveButton onClick={() => removeContact(id)}>Delete</RemoveButton>
+          <RemoveButton onClick={() => dispatch(deleteContact(id))}>Delete</RemoveButton>
           </div>
           )
         })

@@ -15,11 +15,6 @@ const SignupSchema = Yup.object().shape({
       .required('Required'),
   });
 
-//   contacts.find(({ name }) => name.toLowerCase() === newContact.name.toLowerCase()) 
-//   ? alert(`${newContact.name} is already in contacts.`)
-//   : setContacts(prevContacts => [...prevContacts, newContact]
-  
-
 export const ContactForm = () => {
     const dispatch = useDispatch();
 
