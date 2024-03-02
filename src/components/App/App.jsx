@@ -8,8 +8,8 @@ function App() {
   return (
     <Card>
       <ContactForm />
-      <ContactList />
       <Filter />
+      <ContactList />
     </Card>
   )
 }
