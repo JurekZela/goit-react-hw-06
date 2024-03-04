@@ -1,5 +1,5 @@
-import { nanoid } from 'nanoid'
 import { useDispatch } from 'react-redux';
+import { nanoid } from 'nanoid';
 import * as Yup from 'yup';
 import { Formik } from 'formik';
 import { Button, StyledForm as Form, StyledField as Field, StyledLabel as Label, ErrorMsg, } from './Phonebook-styled';
@@ -20,14 +20,9 @@ export const ContactForm = () => {
 
   return (
     <Formik
-    initialValues={{
-      name: '',
-      number: '',
-      contacts: [],
-    }}
     validationSchema={SignupSchema}
-    onSubmit={async (values, actions) => {
-      await new Promise((r) => setTimeout(r, 500));
+    onSubmit={ (values, actions) => {
+       new Promise((r) => setTimeout(r, 500));
 
       dispatch(addContact({
         id: nanoid(),
