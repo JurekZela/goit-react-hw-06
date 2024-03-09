@@ -10,17 +10,17 @@ gap: 20px;
 `;
 
 export const Title = styled.p`
-font-size: 22px;
-font-weight: 700;
+font-weight: 350px;
+font-size: 17px;
+padding-bottom: 5px;
 `;
 
 export const ListContact = styled.li`
-font-weight: 350px;
-font-size: 17px;
 padding: 5px;
 display: flex;
-align-items: center;
-justify-content: space-between;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
 `;
 
 export const RemoveButton = styled.button``;

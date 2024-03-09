@@ -14,22 +14,25 @@ const SignupSchema = Yup.object().shape({
       .min(9, 'Too Short!')
       .required('Required'),
   });
-
 export const ContactForm = () => {
     const dispatch = useDispatch();
 
+
   return (
     <Formik
+    initialValues={{
+      name: '',
+      number: '',
+    }}
+
     validationSchema={SignupSchema}
-    onSubmit={ (values, actions) => {
-       new Promise((r) => setTimeout(r, 500));
+    onSubmit={async (values, actions) => {
+      await new Promise((r) => setTimeout(r, 500));
 
       dispatch(addContact({
         id: nanoid(),
-        name: values.name,
-        number: values.number,
+        ...values
       }))
-
       actions.resetForm();
     }}
   >
