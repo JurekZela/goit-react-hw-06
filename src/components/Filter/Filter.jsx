@@ -6,9 +6,7 @@ import { filter } from '../../redux/filterSlice';
 export const Filter = () => {
     const dispatch = useDispatch();
 
-    const onFilteredContacts = e => {
-        dispatch(filter(e.target.value))
-    };
+    const onFilteredContacts = e => dispatch(filter(e.target.value))
     
     return (
         <div>
