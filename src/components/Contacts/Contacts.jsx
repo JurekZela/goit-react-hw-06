@@ -18,7 +18,6 @@ const ContactList = () => {
     return (  
      <ul>
      {
-     filteredContacts && (
       filteredContacts.map(({ id, name, number }) => (
         <ListContact key={id}>
           <Title>
@@ -26,8 +25,9 @@ const ContactList = () => {
           </Title>
          <RemoveButton onClick={() => dispatch(deleteContact(id))}>Delete</RemoveButton>
        </ListContact>
-       ))
-     )}
+       )
+       )
+     }
      </ul>
     )
 }
