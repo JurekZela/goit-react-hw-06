@@ -1,13 +1,14 @@
 import { Input } from './Filter-styled';
 import { useDispatch } from 'react-redux';
-import { filter } from '../../redux/filterSlice';
+import { changeFilter } from '../../redux/filterSlice';
 
 
-export const Filter = () => {
+export const Filter = e => {
     const dispatch = useDispatch();
 
-    const onFilteredContacts = e => dispatch(filter(e.target.value))
-    
+    const onFilteredContacts = evt => {
+        dispatch(changeFilter(evt.target.value))
+    }
     return (
         <div>
         <p>Find contacts by name</p>

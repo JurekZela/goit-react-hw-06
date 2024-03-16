@@ -11,8 +11,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Provider store={store}>
     <PersistGate loading={null} persistor={persisterStore}>
     <App />
-    </PersistGate>
-    </Provider>
     <GlobalStyles />
+    </PersistGate>
+    </Provider>    
   </React.StrictMode>,
 )
