@@ -1,9 +1,9 @@
 import ContactList from '../Contacts/Contacts';
-import { ContactForm } from '../PhoneBook/Phonebook';
-import { Filter } from '../Filter/Filter';
+import ContactForm  from '../PhoneBook/Phonebook';
+import Filter from '../Filter/Filter';
 import { Card } from '../Contacts/contacts-styled';
 
-function App() {
+export default function App() {
 
   return (
     <Card>
@@ -13,5 +13,3 @@ function App() {
     </Card>
   )
 }
-
-export default App

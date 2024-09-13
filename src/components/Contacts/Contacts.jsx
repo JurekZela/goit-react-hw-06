@@ -4,7 +4,7 @@ import { deleteContact } from '../../redux/contactsSlice';
 
 const itemsFilter = (contacts, filter) => contacts.filter(({ name }) => name.toLowerCase().trim().includes(filter));
 
-const ContactList = () => {
+export default function ContactList () {
 
     const dispatch = useDispatch();
     const selectNameFilter = useSelector((state) => state.filters);
@@ -38,5 +38,3 @@ const ContactList = () => {
      </ul>
     )
 }
-
-export default ContactList;
