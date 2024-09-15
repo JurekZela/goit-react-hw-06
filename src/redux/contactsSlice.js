@@ -8,19 +8,19 @@ const persistConfig = {
   };
 
 const contactsSlice = createSlice({
-    name: 'contactInfo',
-        initialState: {
-              items: []
-          },
-          reducers: {
-            addContact: (state, action) => {
-              state.items.push(action.payload);
-            },
-            deleteContact: (state, action) => {
-                state.items = state.items.filter(item => item.id !== action.payload)
-            },
-          },
-});
+  name: 'contactInfo',
+  initialState: {
+    items: [],
+  },
+  reducers: {
+    addContact: (state, action) => {
+      state.items.push(action.payload);
+    },
+    deleteContact: (state, action) => {
+      state.items = state.items.filter(item => item.id !== action.payload)
+    },
+  }
+})
 
 export  default persistReducer(persistConfig, contactsSlice.reducer);
 
