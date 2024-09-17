@@ -1,5 +1,5 @@
 import ContactList from '../ContactDetails/ContactsList';
-import ContactForm  from '../PhoneBook/ContactForm';
+import ContactForm  from '../ContactForm/ContactForm';
 import Filter from '../Filter/Filter';
 import { Card } from '../ContactDetails/contactCard-styled';
 
