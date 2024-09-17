@@ -1,7 +1,7 @@
-import ContactList from '../Contacts/Contacts';
-import ContactForm  from '../PhoneBook/Phonebook';
+import ContactList from '../ContactDetails/ContactsList';
+import ContactForm  from '../PhoneBook/ContactForm';
 import Filter from '../Filter/Filter';
-import { Card } from '../Contacts/contacts-styled';
+import { Card } from '../ContactDetails/contactCard-styled';
 
 export default function App() {
 

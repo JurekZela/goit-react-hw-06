@@ -1,12 +1,12 @@
 import { Input } from './Filter-styled';
 import { useDispatch } from 'react-redux';
-import { changeFilter } from '../../redux/filterSlice';
+import { changeFilter } from '../../redux/filtersSlice';
 
 
 export default function Filter () {
     const dispatch = useDispatch();
 
-    const onFilteredContacts = evt => {
+    const SearchBox = evt => {
         dispatch(changeFilter(evt.target.value))
     }
     return (
@@ -15,7 +15,7 @@ export default function Filter () {
         <Input 
         type="text"
         name="filter"    
-        onChange={onFilteredContacts}
+        onChange={SearchBox}
         />
         </div>
     )
