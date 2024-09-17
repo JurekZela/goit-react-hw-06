@@ -7,8 +7,9 @@ initialState: {
 },
 
 reducers: {
-    changeFilter: (state, actions) => {
-        return actions.payload;
+    changeFilter: (state, action) => {
+        
+        return state = action.payload;
     }
 }
 })
