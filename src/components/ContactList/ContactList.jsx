@@ -23,18 +23,3 @@ export default function ContactList () {
   </ul>
   )
 }
-
-
-// selectNameFilter ? (
-//   filteredContacts.map((selectContacts) => (
-//     <ListContact key={selectContacts.id}>
-//       <Contact  contacts={selectContacts}/>
-//     </ListContact>
-//   ))
-// ) : (
-//   selectContacts.map((selectContacts) => (
-//     <ListContact key={selectContacts.id}>
-//       <Contact  contacts={selectContacts}/>
-//     </ListContact>
-//   ))
-// )
