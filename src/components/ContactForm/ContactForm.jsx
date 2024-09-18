@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { nanoid } from 'nanoid';
 import * as Yup from 'yup';
 import { Formik } from 'formik';
-import { Button, StyledForm as Form, StyledField as Field, StyledLabel as Label, ErrorMsg, } from './Phonebook-styled';
+import { Button, StyledForm as Form, StyledField as Field, StyledLabel as Label, ErrorMsg, } from './ContactForm-styled';
 import { addContact } from '../../redux/contactsSlice';
 
 const SignupSchema = Yup.object().shape({
@@ -45,7 +45,7 @@ export default function ContactForm  ()  {
 
       <Label>
         Number
-        <Field type="tel"  name="number" placeholder="+48-000-000-000" />
+        <Field type="tel"  name="number" placeholder="48000000000" />
         <ErrorMsg name="number" component="span" />
         </Label>       
 

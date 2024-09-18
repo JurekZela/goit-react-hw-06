@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { deleteContact } from '../../redux/contactsSlice';
-import { RemoveButton, Title } from '../ContactDetails/contactCard-styled';
+import { RemoveButton, Title } from '../ContactList/contactList-styled';
 
 export default function Contact ({ contacts }) {
     const dispatch = useDispatch();

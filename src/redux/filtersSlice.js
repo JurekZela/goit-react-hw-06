@@ -8,8 +8,7 @@ initialState: {
 
 reducers: {
     changeFilter: (state, action) => {
-        
-        return state = action.payload;
+        state.name = action.payload;
     }
 }
 })
